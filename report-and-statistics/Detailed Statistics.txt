@@ -1,0 +1,915 @@
+RUN#1
+Processes: 
+Process{id=0, arrivalTime=85, runTime=9, priority=2}
+Process{id=1, arrivalTime=13, runTime=5, priority=1}
+Process{id=2, arrivalTime=34, runTime=7, priority=4}
+Process{id=3, arrivalTime=48, runTime=10, priority=1}
+Process{id=4, arrivalTime=17, runTime=4, priority=4}
+Process{id=5, arrivalTime=34, runTime=3, priority=4}
+Process{id=6, arrivalTime=96, runTime=10, priority=2}
+Process{id=7, arrivalTime=32, runTime=1, priority=1}
+Process{id=8, arrivalTime=74, runTime=10, priority=3}
+Process{id=9, arrivalTime=53, runTime=8, priority=3}
+Process{id=10, arrivalTime=5, runTime=5, priority=3}
+Process{id=11, arrivalTime=6, runTime=4, priority=4}
+Process{id=12, arrivalTime=89, runTime=1, priority=1}
+Process{id=13, arrivalTime=34, runTime=6, priority=2}
+Process{id=14, arrivalTime=77, runTime=8, priority=1}
+Process{id=15, arrivalTime=92, runTime=1, priority=1}
+Process{id=16, arrivalTime=0, runTime=8, priority=1}
+Process{id=17, arrivalTime=33, runTime=7, priority=1}
+Process{id=18, arrivalTime=36, runTime=6, priority=3}
+Process{id=19, arrivalTime=29, runTime=5, priority=2}
+Process{id=20, arrivalTime=0, runTime=2, priority=1}
+Process{id=21, arrivalTime=83, runTime=9, priority=3}
+Process{id=22, arrivalTime=8, runTime=5, priority=1}
+Process{id=23, arrivalTime=28, runTime=10, priority=1}
+Process{id=24, arrivalTime=15, runTime=9, priority=1}
+Process{id=25, arrivalTime=87, runTime=3, priority=4}
+Process{id=26, arrivalTime=1, runTime=8, priority=2}
+Process{id=27, arrivalTime=62, runTime=2, priority=3}
+Process{id=28, arrivalTime=85, runTime=10, priority=1}
+Process{id=29, arrivalTime=95, runTime=10, priority=1}
+
+First Come First Serve:
+Time Chart:
+P16-P16-P16-P16-P16-P16-P16-P16-P20-P20-P26-P26-P26-P26-P26-P26-P26-P26-P10-P10-P10-P10-P10-P11-P11-P11-P11-P22-P22-P22-P22-P22-P1-P1-P1-P1-P1-P24-P24-P24-P24-P24-P24-P24-P24-P24-P4-P4-P4-P4-P23-P23-P23-P23-P23-P23-P23-P23-P23-P23-P19-P19-P19-P19-P19-P7-P17-P17-P17-P17-P17-P17-P17-P2-P2-P2-P2-P2-P2-P2-P5-P5-P5-P13-P13-P13-P13-P13-P13-P18-P18-P18-P18-P18-P18-P3-P3-P3-P3-P3-P3-P3-P3-P3-P3
+Statistics:
+Time Taken: 105 quanta
+Number of All Processes: 30
+Number of Processes ran: 18
+Avg Turnaround Time: 32.0
+Avg Wait Time: 27.166666
+Avg Response Time: 27.166666
+Throughput: 0.17142858 process per quantum
+
+
+Shortest Job First:
+Time Chart:
+P20-P20-P16-P16-P16-P16-P16-P16-P16-P16-P11-P11-P11-P11-P10-P10-P10-P10-P10-P4-P4-P4-P4-P22-P22-P22-P22-P22-P1-P1-P1-P1-P1-P7-P5-P5-P5-P19-P19-P19-P19-P19-P13-P13-P13-P13-P13-P13-P18-P18-P18-P18-P18-P18-P17-P17-P17-P17-P17-P17-P17-P2-P2-P2-P2-P2-P2-P2-P27-P27-P26-P26-P26-P26-P26-P26-P26-P26-P9-P9-P9-P9-P9-P9-P9-P9-P14-P14-P14-P14-P14-P14-P14-P14-P12-P15-P25-P25-P25-P24-P24-P24-P24-P24-P24-P24-P24-P24
+Statistics:
+Time Taken: 108 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 19.09091
+Avg Wait Time: 15.181818
+Avg Response Time: 15.181818
+Throughput: 0.2037037 process per quantum
+
+
+Shortest Remaining Time First:
+Time Chart:
+P20-P20-P16-P16-P16-P16-P16-P16-P16-P16-P11-P11-P11-P11-P10-P10-P10-P10-P10-P4-P4-P4-P4-P22-P22-P22-P22-P22-P1-P1-P1-P1-P1-P7-P5-P5-P5-P19-P19-P19-P19-P19-P13-P13-P13-P13-P13-P13-P18-P18-P18-P18-P18-P18-P17-P17-P17-P17-P17-P17-P17-P2-P27-P27-P2-P2-P2-P2-P2-P2-P26-P26-P26-P26-P26-P26-P26-P26-P9-P9-P9-P9-P9-P9-P9-P9-P14-P25-P25-P25-P12-P14-P15-P14-P14-P14-P14-P14-P14-P24-P24-P24-P24-P24-P24-P24-P24-P24
+Statistics:
+Time Taken: 108 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 18.40909
+Avg Wait Time: 14.5
+Avg Response Time: 14.181818
+Throughput: 0.2037037 process per quantum
+
+
+Round Robin:
+Time Chart:
+P16-P20-P26-P16-P20-P26-P10-P11-P16-P26-P10-P11-P22-P16-P26-P10-P11-P22-P1-P24-P4-P16-P26-P10-P11-P22-P1-P24-P4-P23-P19-P16-P26-P10-P22-P1-P24-P4-P23-P19-P7-P17-P2-P5-P13-P18-P16-P26-P22-P1-P24-P4-P23-P19-P17-P2-P5-P13-P18-P3-P9-P16-P26-P1-P24-P23-P19-P17-P2-P5-P13-P18-P3-P9-P27-P8-P24-P23-P19-P17-P2-P13-P18-P3-P9-P27-P8-P14-P21-P0-P28-P25-P12-P15-P24-P23-P17-P2-P13-P18-P24-P23-P17-P2-P13-P18-P3-P9-P8-P14-P21-P0-P28-P25-P24-P23-P17-P2-P3-P9-P8-P14-P21-P0-P28-P25-P23-P3-P9-P8-P14-P21-P0-P28-P23-P3-P9-P8-P14-P21-P0-P28-P3-P9-P8-P14-P21-P0-P28-P3-P8-P14-P21-P0-P28-P3-P8-P14-P21-P0-P28-P8-P21-P0-P28-P28
+Statistics:
+Time Taken: 166 quanta
+Number of All Processes: 30
+Number of Processes ran: 28
+Avg Turnaround Time: 55.857143
+Avg Wait Time: 50.92857
+Avg Response Time: 4.892857
+Throughput: 0.16867469 process per quantum
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+P16-P16-P16-P16-P16-P16-P16-P16-P20-P20-P22-P22-P22-P22-P22-P1-P1-P1-P1-P1-P24-P24-P24-P24-P24-P24-P24-P24-P24-P23-P23-P23-P23-P23-P23-P23-P23-P23-P23-P7-P17-P17-P17-P17-P17-P17-P17-P26-P26-P26-P26-P26-P26-P26-P26-P3-P3-P3-P3-P3-P3-P3-P3-P3-P3-P19-P19-P19-P19-P19-P13-P13-P13-P13-P13-P13-P10-P10-P10-P10-P10-P14-P14-P14-P14-P14-P14-P14-P14-P28-P28-P28-P28-P28-P28-P28-P28-P28-P28-P12-idle
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 16
+First Queue:
+      Avg Turnaround Time: 10.083333
+      Avg Wait Time: 4.75
+      Avg Response Time: 4.75
+      Throughput: 0.11881188 process per quantum
+Second Queue:
+      Avg Turnaround Time: 44.666668
+      Avg Wait Time: 39.333332
+      Avg Response Time: 39.333332
+      Throughput: 0.02970297 process per quantum
+Third Queue:
+      Avg Turnaround Time: 75.0
+      Avg Wait Time: 71.0
+      Avg Response Time: 71.0
+      Throughput: 0.00990099 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.15841584 process per quantum
+Overall: 
+Avg Turnaround Time: 20.625
+Avg Wait Time: 15.375
+Avg Response Time: 15.375
+Throughput: 0.15841584 process per quantum
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+P16-P20-P16-P20-P16-P16-P16-P16-P16-P22-P16-P22-P22-P22-P1-P22-P1-P24-P1-P24-P1-P24-P1-P24-P24-P24-P24-P24-P24-P23-P23-P23-P23-P7-P17-P23-P17-P23-P17-P23-P17-P23-P17-P23-P17-P23-P17-P26-P3-P3-P3-P3-P3-P3-P3-P3-P3-P3-P19-P13-P26-P19-P13-P26-P19-P13-P26-P19-P13-P26-P19-P13-P26-P13-P26-P26-P10-P14-P14-P14-P14-P14-P14-P14-P14-P28-P28-P28-P28-P28-P12-P28-P28-P15-P28-P28-P29-P28-P29-P29-P29-P29-P29-P29-P29-P29-P29-P10-P10-P10-P10
+Statistics:
+Time Taken: 111 quanta
+Number of All Processes: 30
+Number of Processes ran: 18
+First Queue:
+      Avg Turnaround Time: 8.142858
+      Avg Wait Time: 2.9285715
+      Avg Response Time: 0.78571427
+      Throughput: 0.12612613 process per quantum
+Second Queue:
+      Avg Turnaround Time: 51.333332
+      Avg Wait Time: 46.0
+      Avg Response Time: 33.333332
+      Throughput: 0.027027028 process per quantum
+Third Queue:
+      Avg Turnaround Time: 105.0
+      Avg Wait Time: 101.0
+      Avg Response Time: 71.0
+      Throughput: 0.009009009 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.16216215 process per quantum
+Overall: 
+Avg Turnaround Time: 20.722221
+Avg Wait Time: 15.555555
+Avg Response Time: 10.111111
+Throughput: 0.16216215 process per quantum
+
+
+Highest Priority First (Non Preemptive) WITH AGING:
+Time Chart:
+P16-P16-P16-P16-P16-P16-P16-P16-P20-P20-P26-P26-P26-P26-P26-P26-P26-P26-P10-P10-P10-P10-P10-P11-P11-P11-P11-P22-P22-P22-P22-P22-P1-P1-P1-P1-P1-P24-P24-P24-P24-P24-P24-P24-P24-P24-P4-P4-P4-P4-P23-P23-P23-P23-P23-P23-P23-P23-P23-P23-P19-P19-P19-P19-P19-P7-P17-P17-P17-P17-P17-P17-P17-P13-P13-P13-P13-P13-P13-P2-P2-P2-P2-P2-P2-P2-P5-P5-P5-P18-P18-P18-P18-P18-P18-P3-P3-P3-P3-P3-P3-P3-P3-P3-P3
+Statistics:
+Time Taken: 105 quanta
+Number of All Processes: 30
+Number of Processes ran: 18
+Avg Turnaround Time: 32.11111
+Avg Wait Time: 27.277779
+Avg Response Time: 27.277779
+Throughput: 0.17142858 process per quantum
+
+
+Highest Priority First (Preemptive) WITH AGING:
+Time Chart:
+P16-P20-P16-P20-P16-P16-P26-P16-P26-P22-P26-P26-P22-P16-P26-P26-P26-P22-P1-P10-P24-P26-P22-P1-P10-P24-P11-P22-P1-P10-P24-P11-P23-P4-P1-P10-P24-P11-P23-P1-P10-P24-P11-P23-P24-P23-P4-P7-P17-P24-P23-P4-P17-P19-P13-P18-P3-P2-P24-P23-P4-P17-P19-P24-P23-P17-P19-P23-P17-P19-P13-P18-P23-P17-P19-P13-P18-P3-P2-P23-P17-P13-P18-P3-P13-P18-P3-P2-P13-P18-P3-P2-P3-P3-P2-P5-P9-P3-P2-P5-P16-P3-P2-P5-P9-P16-P3-P9-P9-P9-P9-P9-P9
+Statistics:
+Time Taken: 113 quanta
+Number of All Processes: 30
+Number of Processes ran: 19
+Avg Turnaround Time: 44.94737
+Avg Wait Time: 40.0
+Avg Response Time: 15.736842
+Throughput: 0.16814159 process per quantum
+
+
+
+
+
+
+RUN#2
+Processes: 
+Process{id=0, arrivalTime=8, runTime=3, priority=4}
+Process{id=1, arrivalTime=67, runTime=10, priority=4}
+Process{id=2, arrivalTime=6, runTime=10, priority=4}
+Process{id=3, arrivalTime=68, runTime=5, priority=2}
+Process{id=4, arrivalTime=34, runTime=5, priority=1}
+Process{id=5, arrivalTime=16, runTime=8, priority=1}
+Process{id=6, arrivalTime=30, runTime=2, priority=1}
+Process{id=7, arrivalTime=47, runTime=10, priority=4}
+Process{id=8, arrivalTime=56, runTime=5, priority=1}
+Process{id=9, arrivalTime=35, runTime=4, priority=4}
+Process{id=10, arrivalTime=79, runTime=7, priority=4}
+Process{id=11, arrivalTime=50, runTime=1, priority=2}
+Process{id=12, arrivalTime=97, runTime=6, priority=1}
+Process{id=13, arrivalTime=88, runTime=3, priority=1}
+Process{id=14, arrivalTime=58, runTime=10, priority=1}
+Process{id=15, arrivalTime=40, runTime=5, priority=3}
+Process{id=16, arrivalTime=36, runTime=8, priority=1}
+Process{id=17, arrivalTime=66, runTime=9, priority=1}
+Process{id=18, arrivalTime=99, runTime=10, priority=1}
+Process{id=19, arrivalTime=2, runTime=1, priority=1}
+Process{id=20, arrivalTime=14, runTime=3, priority=4}
+Process{id=21, arrivalTime=13, runTime=5, priority=4}
+Process{id=22, arrivalTime=38, runTime=7, priority=1}
+Process{id=23, arrivalTime=47, runTime=2, priority=3}
+Process{id=24, arrivalTime=35, runTime=9, priority=3}
+Process{id=25, arrivalTime=71, runTime=9, priority=1}
+Process{id=26, arrivalTime=5, runTime=10, priority=1}
+Process{id=27, arrivalTime=93, runTime=3, priority=3}
+Process{id=28, arrivalTime=46, runTime=6, priority=2}
+Process{id=29, arrivalTime=37, runTime=6, priority=2}
+
+First Come First Serve:
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P2-P2-P2-P2-P2-P2-P2-P2-P2-P2-P0-P0-P0-P21-P21-P21-P21-P21-P20-P20-P20-P5-P5-P5-P5-P5-P5-P5-P5-P6-P6-P4-P4-P4-P4-P4-P9-P9-P9-P9-P24-P24-P24-P24-P24-P24-P24-P24-P24-P16-P16-P16-P16-P16-P16-P16-P16-P29-P29-P29-P29-P29-P29-P22-P22-P22-P22-P22-P22-P22-P15-P15-P15-P15-P15-P28-P28-P28-P28-P28-P28-P7-P7-P7-P7-P7-P7-P7-P7-P7-P7
+Statistics:
+Time Taken: 106 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+Avg Turnaround Time: 27.529411
+Avg Wait Time: 22.529411
+Avg Response Time: 22.529411
+Throughput: 0.16037735 process per quantum
+
+
+Shortest Job First:
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P0-P0-P0-P20-P20-P20-P21-P21-P21-P21-P21-P5-P5-P5-P5-P5-P5-P5-P5-P6-P6-P9-P9-P9-P9-P4-P4-P4-P4-P4-P15-P15-P15-P15-P15-P11-P23-P23-P29-P29-P29-P29-P29-P29-P8-P8-P8-P8-P8-P28-P28-P28-P28-P28-P28-P3-P3-P3-P3-P3-P22-P22-P22-P22-P22-P22-P22-P10-P10-P10-P10-P10-P10-P10-P13-P13-P13-P16-P16-P16-P16-P16-P16-P16-P16-idle
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 20
+Avg Turnaround Time: 13.05
+Avg Wait Time: 9.25
+Avg Response Time: 9.25
+Throughput: 0.1980198 process per quantum
+
+
+Shortest Remaining Time First:
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P0-P0-P0-P26-P26-P26-P20-P20-P20-P26-P26-P26-P26-P21-P21-P21-P21-P21-P5-P5-P5-P5-P6-P6-P5-P5-P5-P5-P9-P9-P9-P9-P4-P4-P4-P4-P4-P15-P15-P23-P23-P15-P11-P15-P15-P29-P29-P29-P29-P29-P29-P8-P8-P8-P8-P8-P28-P28-P28-P28-P28-P28-P3-P3-P3-P3-P3-P22-P22-P22-P22-P22-P22-P22-P10-P10-P10-P10-P10-P10-P10-P13-P13-P13-P16-P27-P27-P27-P16-P16-P16-P16-P16-P16-P16
+Statistics:
+Time Taken: 103 quanta
+Number of All Processes: 30
+Number of Processes ran: 21
+Avg Turnaround Time: 12.285714
+Avg Wait Time: 8.571428
+Avg Response Time: 7.904762
+Throughput: 0.2038835 process per quantum
+
+
+Round Robin:
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P2-P26-P2-P0-P26-P2-P0-P21-P20-P26-P2-P0-P21-P20-P5-P26-P2-P21-P20-P5-P26-P2-P21-P5-P6-P26-P2-P21-P5-P6-P4-P9-P24-P16-P29-P22-P15-P26-P2-P5-P4-P9-P24-P16-P29-P22-P15-P28-P7-P23-P11-P8-P14-P26-P2-P5-P4-P9-P24-P16-P29-P22-P15-P28-P7-P23-P8-P14-P17-P1-P3-P25-P2-P5-P4-P9-P24-P16-P29-P22-P15-P28-P7-P8-P14-P17-P1-P3-P25-P10-P13-P27-P12-P5-P4-P24-P16-P29-P22-P15-P28-P7-P8-P14-P17-P1-P3-P25-P10-P13-P27-P12-P24-P16-P29-P22-P28-P7-P8-P14-P17-P1-P3-P25-P10-P13-P27-P12-P24-P16-P22-P28-P7-P14-P17-P1-P3-P25-P10-P12-P24-P16-P7-P14-P17-P1-P25-P10-P12-P24-P7-P14-P17-P1-P25-P10-P12-P7-P14-P17-P1-P25-P10-P7-P14-P17-P1-P25-P1
+Statistics:
+Time Taken: 176 quanta
+Number of All Processes: 30
+Number of Processes ran: 29
+Avg Turnaround Time: 66.10345
+Avg Wait Time: 61.172413
+Avg Response Time: 4.7586207
+Throughput: 0.16477273 process per quantum
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P2-P2-P2-P2-P2-P2-P2-P2-P2-P2-P5-P5-P5-P5-P5-P5-P5-P5-P6-P6-P4-P4-P4-P4-P4-P16-P16-P16-P16-P16-P16-P16-P16-P22-P22-P22-P22-P22-P22-P22-P29-P29-P29-P29-P29-P29-P8-P8-P8-P8-P8-P14-P14-P14-P14-P14-P14-P14-P14-P14-P14-P17-P17-P17-P17-P17-P17-P17-P17-P17-P25-P25-P25-P25-P25-P25-P25-P25-P25-P13-P13-P13-P12-P12-P12-P12-P12-P12
+Statistics:
+Time Taken: 103 quanta
+Number of All Processes: 30
+Number of Processes ran: 15
+First Queue:
+      Avg Turnaround Time: 10.769231
+      Avg Wait Time: 5.3846154
+      Avg Response Time: 5.3846154
+      Throughput: 0.1262136 process per quantum
+Second Queue:
+      Avg Turnaround Time: 23.0
+      Avg Wait Time: 18.0
+      Avg Response Time: 18.0
+      Throughput: 0.009708738 process per quantum
+Third Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.0 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: 18.0
+      Avg Wait Time: 9.0
+      Avg Response Time: 9.0
+      Throughput: 0.14563107 process per quantum
+Overall: 
+Avg Turnaround Time: 12.066667
+Avg Wait Time: 6.4666667
+Avg Response Time: 6.4666667
+Throughput: 0.14563107 process per quantum
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P2-P5-P5-P5-P5-P5-P5-P5-P5-P0-P21-P20-P2-P0-P21-P6-P6-P20-P2-P4-P4-P4-P16-P4-P16-P22-P4-P16-P22-P16-P22-P16-P22-P16-P22-P16-P22-P16-P22-P29-P28-P8-P8-P8-P14-P8-P14-P8-P14-P14-P14-P14-P17-P14-P17-P14-P17-P25-P14-P17-P25-P14-P17-P25-P17-P25-P17-P25-P17-P25-P17-P25-P25-P25-P13-P13-P13-P11-P3-P29-P28-P3-P12-P12-P12-P12-P12-P12-P29-P28-P3-P29-P28-P3-P29-P28-P3-P29-P28-P2-P0-P21-P20-P2-P21-P2-P21-P2-P2-P2-P2
+Statistics:
+Time Taken: 126 quanta
+Number of All Processes: 30
+Number of Processes ran: 21
+First Queue:
+      Avg Turnaround Time: 9.461538
+      Avg Wait Time: 4.076923
+      Avg Response Time: 0.53846157
+      Throughput: 0.103174604 process per quantum
+Second Queue:
+      Avg Turnaround Time: 56.75
+      Avg Wait Time: 53.25
+      Avg Response Time: 23.25
+      Throughput: 0.031746034 process per quantum
+Third Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.0 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: 109.25
+      Avg Wait Time: 105.0
+      Avg Response Time: 12.25
+      Throughput: 0.16666667 process per quantum
+Overall: 
+Avg Turnaround Time: 37.47619
+Avg Wait Time: 32.666668
+Avg Response Time: 7.095238
+Throughput: 0.16666667 process per quantum
+
+
+Highest Priority First (Non Preemptive) WITH AGING:
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P2-P2-P2-P2-P2-P2-P2-P2-P2-P2-P0-P0-P0-P21-P21-P21-P21-P21-P20-P20-P20-P5-P5-P5-P5-P5-P5-P5-P5-P6-P6-P4-P4-P4-P4-P4-P24-P24-P24-P24-P24-P24-P24-P24-P24-P9-P9-P9-P9-P16-P16-P16-P16-P16-P16-P16-P16-P29-P29-P29-P29-P29-P29-P22-P22-P22-P22-P22-P22-P22-P15-P15-P15-P15-P15-P28-P28-P28-P28-P28-P28-P23-P23-P7-P7-P7-P7-P7-P7-P7-P7-P7-P7
+Statistics:
+Time Taken: 108 quanta
+Number of All Processes: 30
+Number of Processes ran: 18
+Avg Turnaround Time: 29.166666
+Avg Wait Time: 24.38889
+Avg Response Time: 24.38889
+Throughput: 0.16666667 process per quantum
+
+
+Highest Priority First (Preemptive) WITH AGING:
+Time Chart:
+idle-idle-P19-idle-idle-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P2-P5-P5-P5-P5-P5-P5-P2-P2-P2-P0-P5-P2-P0-P2-P0-P21-P20-P6-P5-P2-P21-P20-P6-P4-P21-P20-P4-P16-P22-P21-P4-P16-P22-P29-P24-P9-P21-P4-P16-P22-P29-P4-P16-P22-P29-P24-P16-P22-P29-P24-P9-P15-P28-P11-P8-P23-P16-P16-P22-P29-P24-P16-P22-P29-P24-P9-P24-P9-P24-P15-P28-P8-P23-P24-P15-P28-P8-P14-P24-P15-P28-P8-P15-P28-P2-P28-P8-P14-P2-P14-P2-P14-P14-P14-P14-P14-P14-P14
+Statistics:
+Time Taken: 114 quanta
+Number of All Processes: 30
+Number of Processes ran: 20
+Avg Turnaround Time: 37.5
+Avg Wait Time: 33.0
+Avg Response Time: 13.35
+Throughput: 0.1754386 process per quantum
+
+
+
+
+
+
+RUN#3
+Processes: 
+Process{id=0, arrivalTime=34, runTime=1, priority=1}
+Process{id=1, arrivalTime=81, runTime=9, priority=3}
+Process{id=2, arrivalTime=49, runTime=5, priority=1}
+Process{id=3, arrivalTime=61, runTime=6, priority=2}
+Process{id=4, arrivalTime=77, runTime=5, priority=1}
+Process{id=5, arrivalTime=6, runTime=7, priority=1}
+Process{id=6, arrivalTime=86, runTime=10, priority=1}
+Process{id=7, arrivalTime=92, runTime=6, priority=3}
+Process{id=8, arrivalTime=78, runTime=4, priority=3}
+Process{id=9, arrivalTime=59, runTime=7, priority=2}
+Process{id=10, arrivalTime=38, runTime=6, priority=3}
+Process{id=11, arrivalTime=68, runTime=3, priority=4}
+Process{id=12, arrivalTime=61, runTime=5, priority=2}
+Process{id=13, arrivalTime=87, runTime=8, priority=4}
+Process{id=14, arrivalTime=32, runTime=5, priority=2}
+Process{id=15, arrivalTime=42, runTime=9, priority=1}
+Process{id=16, arrivalTime=24, runTime=5, priority=3}
+Process{id=17, arrivalTime=21, runTime=8, priority=2}
+Process{id=18, arrivalTime=29, runTime=9, priority=3}
+Process{id=19, arrivalTime=46, runTime=1, priority=1}
+Process{id=20, arrivalTime=26, runTime=6, priority=2}
+Process{id=21, arrivalTime=86, runTime=2, priority=2}
+Process{id=22, arrivalTime=95, runTime=3, priority=3}
+Process{id=23, arrivalTime=9, runTime=6, priority=1}
+Process{id=24, arrivalTime=46, runTime=6, priority=2}
+Process{id=25, arrivalTime=26, runTime=4, priority=2}
+Process{id=26, arrivalTime=20, runTime=6, priority=3}
+Process{id=27, arrivalTime=83, runTime=5, priority=3}
+Process{id=28, arrivalTime=26, runTime=3, priority=2}
+Process{id=29, arrivalTime=90, runTime=3, priority=2}
+
+First Come First Serve:
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P5-P5-P5-P23-P23-P23-P23-P23-P23-idle-P26-P26-P26-P26-P26-P26-P17-P17-P17-P17-P17-P17-P17-P17-P16-P16-P16-P16-P16-P20-P20-P20-P20-P20-P20-P25-P25-P25-P25-P28-P28-P28-P18-P18-P18-P18-P18-P18-P18-P18-P18-P14-P14-P14-P14-P14-P0-P10-P10-P10-P10-P10-P10-P15-P15-P15-P15-P15-P15-P15-P15-P15-P19-P24-P24-P24-P24-P24-P24-P2-P2-P2-P2-P2-P9-P9-P9-P9-P9-P9-P9
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+Avg Turnaround Time: 26.058823
+Avg Wait Time: 21.529411
+Avg Response Time: 21.529411
+Throughput: 0.16831683 process per quantum
+
+
+Shortest Job First:
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P5-P5-P5-P23-P23-P23-P23-P23-P23-idle-P26-P26-P26-P26-P26-P26-P28-P28-P28-P25-P25-P25-P25-P16-P16-P16-P16-P16-P0-P14-P14-P14-P14-P14-P20-P20-P20-P20-P20-P20-P19-P2-P2-P2-P2-P2-P10-P10-P10-P10-P10-P10-P12-P12-P12-P12-P12-P24-P24-P24-P24-P24-P24-P11-P11-P11-P3-P3-P3-P3-P3-P3-P8-P8-P8-P8-P21-P21-P4-P4-P4-P4-P4-P29-P29-P29-P22-P22-P22-P27-P27-P27-P27-P27
+Statistics:
+Time Taken: 104 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 10.045455
+Avg Wait Time: 6.6363635
+Avg Response Time: 6.6363635
+Throughput: 0.21153846 process per quantum
+
+
+Shortest Remaining Time First:
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P5-P5-P5-P23-P23-P23-P23-P23-P23-idle-P26-P26-P26-P26-P26-P26-P28-P28-P28-P25-P25-P25-P25-P16-P0-P16-P16-P16-P16-P14-P14-P14-P14-P14-P20-P20-P19-P20-P20-P20-P20-P2-P2-P2-P2-P2-P10-P10-P10-P10-P10-P10-P12-P12-P12-P12-P12-P24-P11-P11-P11-P24-P24-P24-P24-P24-P3-P3-P3-P3-P3-P3-P8-P8-P8-P8-P21-P21-P4-P4-P4-P4-P4-P29-P29-P29-P22-P22-P22-P27-P27-P27-P27-P27
+Statistics:
+Time Taken: 104 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 9.681818
+Avg Wait Time: 6.2727275
+Avg Response Time: 6.0454545
+Throughput: 0.21153846 process per quantum
+
+
+Round Robin:
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P23-P5-P23-P5-P23-P5-P23-P23-P23-idle-P26-P26-P17-P26-P17-P16-P26-P17-P16-P20-P25-P28-P18-P14-P26-P17-P16-P20-P25-P28-P18-P14-P0-P10-P15-P26-P17-P16-P20-P25-P28-P18-P14-P10-P15-P19-P24-P2-P17-P16-P20-P25-P18-P14-P10-P15-P24-P2-P9-P3-P12-P11-P17-P20-P18-P14-P10-P15-P24-P2-P9-P3-P12-P11-P4-P8-P1-P27-P6-P21-P13-P29-P17-P20-P18-P10-P15-P24-P2-P9-P18-P10-P15-P24-P2-P9-P3-P12-P11-P4-P8-P1-P27-P6-P21-P13-P29-P18-P15-P24-P9-P3-P12-P4-P8-P1-P27-P6-P13-P29-P18-P15-P9-P3-P12-P4-P8-P1-P27-P6-P13-P15-P9-P3-P4-P1-P27-P6-P13-P1-P6-P13-P1-P6-P13-P1-P6-P13-P1-P6-P6
+Statistics:
+Time Taken: 161 quanta
+Number of All Processes: 30
+Number of Processes ran: 28
+Avg Turnaround Time: 52.857143
+Avg Wait Time: 48.357143
+Avg Response Time: 4.357143
+Throughput: 0.17391305 process per quantum
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P5-P5-P5-P23-P23-P23-P23-P23-P23-idle-P26-P26-P26-P26-P26-P26-P17-P17-P17-P17-P17-P17-P17-P17-P0-P20-P20-P20-P20-P20-P20-P25-P25-P25-P25-P15-P15-P15-P15-P15-P15-P15-P15-P15-P19-P2-P2-P2-P2-P2-P28-P28-P28-P14-P14-P14-P14-P14-P24-P24-P24-P24-P24-P24-P9-P9-P9-P9-P9-P9-P9-P4-P4-P4-P4-P4-P6-P6-P6-P6-P6-P6-P6-P6-P6-P6-P3-P3-P3-P3-P3-P3
+Statistics:
+Time Taken: 102 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+First Queue:
+      Avg Turnaround Time: 7.625
+      Avg Wait Time: 3.125
+      Avg Response Time: 3.125
+      Throughput: 0.078431375 process per quantum
+Second Queue:
+      Avg Turnaround Time: 25.375
+      Avg Wait Time: 20.75
+      Avg Response Time: 20.75
+      Throughput: 0.078431375 process per quantum
+Third Queue:
+      Avg Turnaround Time: 5.0
+      Avg Wait Time: 0.0
+      Avg Response Time: 0.0
+      Throughput: 0.009803922 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.16666667 process per quantum
+Overall: 
+Avg Turnaround Time: 15.823529
+Avg Wait Time: 11.235294
+Avg Response Time: 11.235294
+Throughput: 0.16666667 process per quantum
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P23-P5-P23-P5-P23-P5-P23-P23-P23-idle-P26-P17-P17-P17-P17-P17-P17-P20-P25-P28-P17-P20-P25-P28-P0-P14-P17-P20-P25-P28-P14-P20-P15-P15-P15-P15-P15-P19-P15-P15-P2-P15-P2-P15-P2-P2-P2-P25-P14-P24-P9-P20-P14-P24-P9-P3-P12-P20-P14-P24-P9-P3-P12-P24-P9-P3-P12-P4-P4-P4-P4-P4-P24-P9-P3-P12-P6-P6-P6-P6-P6-P6-P6-P6-P6-P6-P24-P9-P3-P12-P9-P3-P26-P26-P26-P26-P26
+Statistics:
+Time Taken: 107 quanta
+Number of All Processes: 30
+Number of Processes ran: 18
+First Queue:
+      Avg Turnaround Time: 6.25
+      Avg Wait Time: 1.75
+      Avg Response Time: 0.375
+      Throughput: 0.07476635 process per quantum
+Second Queue:
+      Avg Turnaround Time: 33.88889
+      Avg Wait Time: 29.333334
+      Avg Response Time: 3.5555556
+      Throughput: 0.08411215 process per quantum
+Third Queue:
+      Avg Turnaround Time: 86.0
+      Avg Wait Time: 81.0
+      Avg Response Time: 0.0
+      Throughput: 0.009345794 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.1682243 process per quantum
+Overall: 
+Avg Turnaround Time: 24.5
+Avg Wait Time: 19.944445
+Avg Response Time: 1.9444444
+Throughput: 0.1682243 process per quantum
+
+
+Highest Priority First (Non Preemptive) WITH AGING:
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P5-P5-P5-P23-P23-P23-P23-P23-P23-idle-P26-P26-P26-P26-P26-P26-P17-P17-P17-P17-P17-P17-P17-P17-P16-P16-P16-P16-P16-P20-P20-P20-P20-P20-P20-P25-P25-P25-P25-P28-P28-P28-P18-P18-P18-P18-P18-P18-P18-P18-P18-P14-P14-P14-P14-P14-P0-P10-P10-P10-P10-P10-P10-P15-P15-P15-P15-P15-P15-P15-P15-P15-P19-P24-P24-P24-P24-P24-P24-P2-P2-P2-P2-P2-P9-P9-P9-P9-P9-P9-P9
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+Avg Turnaround Time: 26.058823
+Avg Wait Time: 21.529411
+Avg Response Time: 21.529411
+Throughput: 0.16831683 process per quantum
+
+
+Highest Priority First (Preemptive) WITH AGING:
+Time Chart:
+idle-idle-idle-idle-idle-idle-P5-P5-P5-P5-P23-P5-P23-P5-P23-P5-P23-P23-P23-idle-P26-P17-P17-P17-P17-P17-P26-P20-P25-P26-P20-P17-P28-P25-P28-P25-P26-P20-P16-P28-P25-P26-P20-P26-P20-P16-P0-P14-P18-P15-P19-P20-P16-P14-P18-P15-P10-P2-P24-P17-P16-P14-P18-P15-P10-P2-P16-P14-P18-P15-P10-P2-P24-P14-P18-P15-P10-P2-P18-P15-P10-P2-P24-P18-P15-P10-P24-P9-P18-P15-P24-P9-P18-P15-P24-P9-P3-P12-P4-P11-P17-P9-P3-P12-P4-P11-P9-P3-P12-P4-P11-P9-P3-P12-P4-P9-P3-P12-P4-P3
+Statistics:
+Time Taken: 120 quanta
+Number of All Processes: 30
+Number of Processes ran: 21
+Avg Turnaround Time: 36.42857
+Avg Wait Time: 32.04762
+Avg Response Time: 12.857142
+Throughput: 0.175 process per quantum
+
+
+
+
+
+
+RUN#4
+Processes: 
+Process{id=0, arrivalTime=62, runTime=3, priority=4}
+Process{id=1, arrivalTime=58, runTime=8, priority=1}
+Process{id=2, arrivalTime=11, runTime=7, priority=1}
+Process{id=3, arrivalTime=27, runTime=3, priority=4}
+Process{id=4, arrivalTime=52, runTime=1, priority=4}
+Process{id=5, arrivalTime=52, runTime=10, priority=3}
+Process{id=6, arrivalTime=62, runTime=9, priority=4}
+Process{id=7, arrivalTime=69, runTime=3, priority=3}
+Process{id=8, arrivalTime=39, runTime=4, priority=4}
+Process{id=9, arrivalTime=23, runTime=10, priority=1}
+Process{id=10, arrivalTime=82, runTime=4, priority=2}
+Process{id=11, arrivalTime=10, runTime=6, priority=1}
+Process{id=12, arrivalTime=82, runTime=6, priority=1}
+Process{id=13, arrivalTime=33, runTime=9, priority=3}
+Process{id=14, arrivalTime=95, runTime=3, priority=4}
+Process{id=15, arrivalTime=96, runTime=7, priority=2}
+Process{id=16, arrivalTime=64, runTime=9, priority=1}
+Process{id=17, arrivalTime=49, runTime=4, priority=1}
+Process{id=18, arrivalTime=73, runTime=3, priority=4}
+Process{id=19, arrivalTime=9, runTime=7, priority=3}
+Process{id=20, arrivalTime=86, runTime=9, priority=3}
+Process{id=21, arrivalTime=2, runTime=10, priority=3}
+Process{id=22, arrivalTime=77, runTime=2, priority=2}
+Process{id=23, arrivalTime=9, runTime=8, priority=3}
+Process{id=24, arrivalTime=47, runTime=6, priority=4}
+Process{id=25, arrivalTime=2, runTime=6, priority=3}
+Process{id=26, arrivalTime=98, runTime=4, priority=4}
+Process{id=27, arrivalTime=83, runTime=2, priority=2}
+Process{id=28, arrivalTime=76, runTime=5, priority=3}
+Process{id=29, arrivalTime=54, runTime=3, priority=4}
+
+First Come First Serve:
+Time Chart:
+idle-idle-P21-P21-P21-P21-P21-P21-P21-P21-P21-P21-P25-P25-P25-P25-P25-P25-P19-P19-P19-P19-P19-P19-P19-P23-P23-P23-P23-P23-P23-P23-P23-P11-P11-P11-P11-P11-P11-P2-P2-P2-P2-P2-P2-P2-P9-P9-P9-P9-P9-P9-P9-P9-P9-P9-P3-P3-P3-P13-P13-P13-P13-P13-P13-P13-P13-P13-P8-P8-P8-P8-P24-P24-P24-P24-P24-P24-P17-P17-P17-P17-P4-P5-P5-P5-P5-P5-P5-P5-P5-P5-P5-P29-P29-P29-P1-P1-P1-P1-P1-P1-P1-P1
+Statistics:
+Time Taken: 104 quanta
+Number of All Processes: 30
+Number of Processes ran: 16
+Avg Turnaround Time: 29.4375
+Avg Wait Time: 24.0625
+Avg Response Time: 24.0625
+Throughput: 0.15384616 process per quantum
+
+
+Shortest Job First:
+Time Chart:
+idle-idle-P25-P25-P25-P25-P25-P25-P21-P21-P21-P21-P21-P21-P21-P21-P21-P21-P11-P11-P11-P11-P11-P11-P19-P19-P19-P19-P19-P19-P19-P3-P3-P3-P2-P2-P2-P2-P2-P2-P2-P8-P8-P8-P8-P23-P23-P23-P23-P23-P23-P23-P23-P4-P29-P29-P29-P17-P17-P17-P17-P24-P24-P24-P24-P24-P24-P0-P0-P0-P7-P7-P7-P18-P18-P18-P28-P28-P28-P28-P28-P22-P22-P27-P27-P10-P10-P10-P10-P12-P12-P12-P12-P12-P12-P14-P14-P14-P26-P26-P26-P26
+Statistics:
+Time Taken: 102 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 9.772727
+Avg Wait Time: 6.2272725
+Avg Response Time: 6.2272725
+Throughput: 0.21568628 process per quantum
+
+
+Shortest Remaining Time First:
+Time Chart:
+idle-idle-P25-P25-P25-P25-P25-P25-P21-P19-P19-P19-P19-P19-P19-P19-P11-P11-P11-P11-P11-P11-P2-P2-P2-P2-P2-P2-P2-P3-P3-P3-P23-P23-P23-P23-P23-P23-P23-P23-P8-P8-P8-P8-P21-P21-P21-P21-P21-P21-P21-P21-P21-P4-P29-P29-P29-P17-P17-P17-P17-P24-P0-P0-P0-P24-P24-P24-P24-P24-P7-P7-P7-P18-P18-P18-P28-P22-P22-P28-P28-P28-P28-P27-P27-P10-P10-P10-P10-P12-P12-P12-P12-P12-P12-P14-P14-P14-P26-P26-P26-P26
+Statistics:
+Time Taken: 102 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 9.136364
+Avg Wait Time: 5.590909
+Avg Response Time: 3.7727273
+Throughput: 0.21568628 process per quantum
+
+
+Round Robin:
+Time Chart:
+idle-idle-P21-P25-P21-P25-P21-P25-P21-P25-P19-P23-P11-P2-P21-P25-P19-P23-P11-P2-P21-P25-P19-P23-P11-P2-P9-P21-P19-P23-P11-P2-P9-P3-P13-P21-P19-P23-P11-P2-P9-P3-P13-P8-P21-P19-P23-P11-P2-P9-P3-P13-P8-P24-P17-P4-P5-P29-P21-P19-P23-P2-P9-P13-P8-P24-P17-P5-P29-P1-P0-P6-P16-P7-P18-P23-P9-P13-P8-P24-P17-P5-P29-P1-P0-P6-P16-P7-P18-P28-P22-P10-P12-P27-P20-P9-P13-P24-P17-P5-P9-P13-P24-P5-P1-P0-P6-P16-P7-P18-P28-P22-P10-P12-P27-P20-P9-P13-P24-P5-P1-P6-P16-P28-P10-P12-P20-P9-P13-P5-P1-P6-P16-P28-P10-P12-P20-P5-P1-P6-P16-P28-P12-P20-P5-P1-P6-P16-P12-P20-P5-P1-P6-P16-P20-P6-P16-P20-P20
+Statistics:
+Time Taken: 159 quanta
+Number of All Processes: 30
+Number of Processes ran: 27
+Avg Turnaround Time: 55.703705
+Avg Wait Time: 50.88889
+Avg Response Time: 5.4444447
+Throughput: 0.16981132 process per quantum
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+idle-idle-P21-P21-P21-P21-P21-P21-P21-P21-P21-P21-P11-P11-P11-P11-P11-P11-P2-P2-P2-P2-P2-P2-P2-P9-P9-P9-P9-P9-P9-P9-P9-P9-P9-P25-P25-P25-P25-P25-P25-P19-P19-P19-P19-P19-P19-P19-P23-P23-P23-P23-P23-P23-P23-P23-P17-P17-P17-P17-P1-P1-P1-P1-P1-P1-P1-P1-P16-P16-P16-P16-P16-P16-P16-P16-P16-P22-P22-P13-P13-P13-P13-P13-P13-P13-P13-P13-P12-P12-P12-P12-P12-P12-P10-P10-P10-P10-P27-P27-idle
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 15
+First Queue:
+      Avg Turnaround Time: 10.428572
+      Avg Wait Time: 4.285714
+      Avg Response Time: 4.285714
+      Throughput: 0.06930693 process per quantum
+Second Queue:
+      Avg Turnaround Time: 10.666667
+      Avg Wait Time: 9.0
+      Avg Response Time: 9.0
+      Throughput: 0.02970297 process per quantum
+Third Queue:
+      Avg Turnaround Time: 37.0
+      Avg Wait Time: 30.0
+      Avg Response Time: 30.0
+      Throughput: 0.04950495 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.14851485 process per quantum
+Overall: 
+Avg Turnaround Time: 19.333334
+Avg Wait Time: 13.8
+Avg Response Time: 13.8
+Throughput: 0.14851485 process per quantum
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+idle-idle-P21-P25-P21-P25-P21-P25-P21-P25-P11-P11-P2-P11-P2-P11-P2-P11-P2-P11-P2-P2-P2-P9-P9-P9-P9-P9-P9-P9-P9-P9-P9-P19-P23-P13-P21-P25-P19-P23-P13-P21-P25-P19-P23-P13-P21-P19-P23-P17-P17-P17-P17-P13-P5-P21-P19-P23-P1-P1-P1-P1-P1-P1-P1-P16-P1-P16-P16-P16-P16-P16-P16-P16-P16-P13-P5-P22-P22-P7-P28-P21-P12-P12-P12-P12-P12-P12-P10-P27-P10-P27-P10-P10-P19-P23-P15-P15-P15-P15-P15-P15-P15-P21-P19-P23-P13-P5-P7-P28-P23-P13-P5-P7-P28-P13-P5-P28-P13-P5-P28-P5-P5-P5-P5
+Statistics:
+Time Taken: 125 quanta
+Number of All Processes: 30
+Number of Processes ran: 19
+First Queue:
+      Avg Turnaround Time: 7.857143
+      Avg Wait Time: 1.7142857
+      Avg Response Time: 0.2857143
+      Throughput: 0.056 process per quantum
+Second Queue:
+      Avg Turnaround Time: 6.5
+      Avg Wait Time: 3.75
+      Avg Response Time: 3.0
+      Throughput: 0.032 process per quantum
+Third Queue:
+      Avg Turnaround Time: 72.75
+      Avg Wait Time: 66.5
+      Avg Response Time: 8.5
+      Throughput: 0.064 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: NaN
+      Avg Wait Time: NaN
+      Avg Response Time: NaN
+      Throughput: 0.152 process per quantum
+Overall: 
+Avg Turnaround Time: 34.894737
+Avg Wait Time: 29.421053
+Avg Response Time: 4.3157897
+Throughput: 0.152 process per quantum
+
+
+Highest Priority First (Non Preemptive) WITH AGING:
+Time Chart:
+idle-idle-P21-P21-P21-P21-P21-P21-P21-P21-P21-P21-P25-P25-P25-P25-P25-P25-P11-P11-P11-P11-P11-P11-P19-P19-P19-P19-P19-P19-P19-P23-P23-P23-P23-P23-P23-P23-P23-P2-P2-P2-P2-P2-P2-P2-P9-P9-P9-P9-P9-P9-P9-P9-P9-P9-P3-P3-P3-P13-P13-P13-P13-P13-P13-P13-P13-P13-P8-P8-P8-P8-P24-P24-P24-P24-P24-P24-P17-P17-P17-P17-P5-P5-P5-P5-P5-P5-P5-P5-P5-P5-P4-P29-P29-P29-P1-P1-P1-P1-P1-P1-P1-P1
+Statistics:
+Time Taken: 104 quanta
+Number of All Processes: 30
+Number of Processes ran: 16
+Avg Turnaround Time: 29.8125
+Avg Wait Time: 24.4375
+Avg Response Time: 24.4375
+Throughput: 0.15384616 process per quantum
+
+
+Highest Priority First (Preemptive) WITH AGING:
+Time Chart:
+idle-idle-P21-P25-P21-P25-P21-P25-P21-P25-P11-P11-P2-P11-P2-P11-P2-P21-P25-P2-P21-P25-P19-P23-P9-P11-P2-P21-P19-P23-P9-P11-P21-P19-P23-P9-P2-P21-P21-P19-P23-P9-P3-P19-P19-P23-P9-P3-P13-P19-P23-P9-P23-P9-P23-P9-P3-P13-P17-P9-P13-P17-P8-P1-P9-P13-P17-P13-P17-P13-P8-P1-P24-P5-P13-P8-P1-P24-P13-P8-P1-P24-P5-P13-P1-P24-P5-P16-P1-P24-P5-P1-P24-P5-P16-P4-P1-P5-P16-P29-P2-P5-P16-P29-P5-P16-P29-P5-P16-P5-P16-P16-P16
+Statistics:
+Time Taken: 113 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+Avg Turnaround Time: 41.882355
+Avg Wait Time: 36.35294
+Avg Response Time: 14.941176
+Throughput: 0.15044248 process per quantum
+
+
+
+
+
+
+RUN#5
+Processes: 
+Process{id=0, arrivalTime=87, runTime=3, priority=1}
+Process{id=1, arrivalTime=24, runTime=7, priority=4}
+Process{id=2, arrivalTime=54, runTime=2, priority=2}
+Process{id=3, arrivalTime=21, runTime=2, priority=4}
+Process{id=4, arrivalTime=47, runTime=1, priority=4}
+Process{id=5, arrivalTime=90, runTime=9, priority=2}
+Process{id=6, arrivalTime=17, runTime=8, priority=4}
+Process{id=7, arrivalTime=65, runTime=9, priority=2}
+Process{id=8, arrivalTime=61, runTime=3, priority=2}
+Process{id=9, arrivalTime=47, runTime=6, priority=3}
+Process{id=10, arrivalTime=89, runTime=3, priority=4}
+Process{id=11, arrivalTime=29, runTime=8, priority=3}
+Process{id=12, arrivalTime=46, runTime=4, priority=3}
+Process{id=13, arrivalTime=33, runTime=5, priority=2}
+Process{id=14, arrivalTime=70, runTime=8, priority=1}
+Process{id=15, arrivalTime=98, runTime=3, priority=4}
+Process{id=16, arrivalTime=53, runTime=6, priority=2}
+Process{id=17, arrivalTime=5, runTime=3, priority=2}
+Process{id=18, arrivalTime=3, runTime=3, priority=2}
+Process{id=19, arrivalTime=0, runTime=8, priority=3}
+Process{id=20, arrivalTime=99, runTime=2, priority=1}
+Process{id=21, arrivalTime=26, runTime=9, priority=1}
+Process{id=22, arrivalTime=33, runTime=8, priority=1}
+Process{id=23, arrivalTime=18, runTime=10, priority=4}
+Process{id=24, arrivalTime=58, runTime=1, priority=4}
+Process{id=25, arrivalTime=57, runTime=10, priority=4}
+Process{id=26, arrivalTime=13, runTime=10, priority=2}
+Process{id=27, arrivalTime=73, runTime=5, priority=2}
+Process{id=28, arrivalTime=56, runTime=2, priority=2}
+Process{id=29, arrivalTime=6, runTime=2, priority=4}
+
+First Come First Serve:
+Time Chart:
+P19-P19-P19-P19-P19-P19-P19-P19-P18-P18-P18-P17-P17-P17-P29-P29-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P6-P6-P6-P6-P6-P6-P6-P6-P23-P23-P23-P23-P23-P23-P23-P23-P23-P23-P3-P3-P1-P1-P1-P1-P1-P1-P1-P21-P21-P21-P21-P21-P21-P21-P21-P21-P11-P11-P11-P11-P11-P11-P11-P11-P13-P13-P13-P13-P13-P22-P22-P22-P22-P22-P22-P22-P22-P12-P12-P12-P12-P4-P9-P9-P9-P9-P9-P9-P16-P16-P16-P16-P16-P16-idle
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+Avg Turnaround Time: 27.82353
+Avg Wait Time: 22.941177
+Avg Response Time: 22.941177
+Throughput: 0.16831683 process per quantum
+
+
+Shortest Job First:
+Time Chart:
+P19-P19-P19-P19-P19-P19-P19-P19-P29-P29-P18-P18-P18-P17-P17-P17-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P3-P3-P1-P1-P1-P1-P1-P1-P1-P13-P13-P13-P13-P13-P6-P6-P6-P6-P6-P6-P6-P6-P4-P12-P12-P12-P12-P9-P9-P9-P9-P9-P9-P24-P2-P2-P28-P28-P8-P8-P8-P16-P16-P16-P16-P16-P16-P27-P27-P27-P27-P27-P11-P11-P11-P11-P11-P11-P11-P11-P22-P22-P22-P22-P22-P22-P22-P22-P0-P0-P0-P10-P10-P10-idle
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+Avg Turnaround Time: 13.136364
+Avg Wait Time: 9.590909
+Avg Response Time: 9.590909
+Throughput: 0.21782178 process per quantum
+
+
+Shortest Remaining Time First:
+Time Chart:
+P19-P19-P19-P18-P18-P18-P29-P29-P17-P17-P17-P19-P19-P19-P19-P19-P26-P6-P6-P6-P6-P3-P3-P6-P6-P6-P6-P1-P1-P1-P1-P1-P1-P1-P13-P13-P13-P13-P13-P11-P11-P11-P11-P11-P11-P11-P11-P4-P12-P12-P12-P12-P9-P9-P2-P2-P28-P28-P24-P9-P9-P9-P9-P8-P8-P8-P16-P16-P16-P16-P16-P16-P22-P27-P27-P27-P27-P27-P22-P22-P22-P22-P22-P22-P22-P14-P14-P0-P0-P0-P10-P10-P10-P14-P14-P14-P14-P14-P14-P20-P20-P26-P26-P26-P26-P26-P26-P26-P26-P26
+Statistics:
+Time Taken: 110 quanta
+Number of All Processes: 30
+Number of Processes ran: 24
+Avg Turnaround Time: 12.208333
+Avg Wait Time: 8.625
+Avg Response Time: 4.0416665
+Throughput: 0.21818182 process per quantum
+
+
+Round Robin:
+Time Chart:
+P19-P19-P19-P19-P18-P19-P18-P17-P29-P19-P18-P17-P29-P19-P17-P26-P19-P26-P6-P23-P26-P6-P23-P3-P26-P6-P23-P3-P1-P21-P11-P26-P6-P23-P1-P21-P11-P13-P22-P26-P6-P23-P1-P21-P11-P13-P22-P12-P4-P9-P26-P6-P23-P1-P21-P11-P13-P22-P12-P9-P16-P2-P28-P25-P24-P8-P7-P26-P6-P23-P1-P21-P11-P13-P22-P12-P9-P16-P2-P28-P25-P8-P7-P14-P27-P26-P6-P23-P1-P21-P11-P13-P22-P12-P9-P16-P25-P8-P7-P14-P26-P23-P1-P21-P11-P22-P9-P16-P25-P7-P14-P27-P23-P21-P11-P22-P9-P16-P25-P7-P14-P27-P21-P22-P16-P25-P7-P14-P27-P25-P7-P14-P27-P25-P7-P14-P25-P7-P14-P25
+Statistics:
+Time Taken: 140 quanta
+Number of All Processes: 30
+Number of Processes ran: 25
+Avg Turnaround Time: 50.36
+Avg Wait Time: 45.76
+Avg Response Time: 3.72
+Throughput: 0.17857143 process per quantum
+
+
+Highest Priority First (Non Preemptive):
+Time Chart:
+P19-P19-P19-P19-P19-P19-P19-P19-P18-P18-P18-P17-P17-P17-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P29-P29-P21-P21-P21-P21-P21-P21-P21-P21-P21-P22-P22-P22-P22-P22-P22-P22-P22-P13-P13-P13-P13-P13-P11-P11-P11-P11-P11-P11-P11-P11-P16-P16-P16-P16-P16-P16-P2-P2-P28-P28-P8-P8-P8-P7-P7-P7-P7-P7-P7-P7-P7-P7-P14-P14-P14-P14-P14-P14-P14-P14-P27-P27-P27-P27-P27-P0-P0-P0-P5-P5-P5-P5-P5-P5-P5-P5-P5
+Statistics:
+Time Taken: 103 quanta
+Number of All Processes: 30
+Number of Processes ran: 18
+First Queue:
+      Avg Turnaround Time: 9.5
+      Avg Wait Time: 3.5
+      Avg Response Time: 3.5
+      Throughput: 0.03883495 process per quantum
+Second Queue:
+      Avg Turnaround Time: 10.272727
+      Avg Wait Time: 6.090909
+      Avg Response Time: 6.090909
+      Throughput: 0.106796116 process per quantum
+Third Queue:
+      Avg Turnaround Time: 16.5
+      Avg Wait Time: 9.5
+      Avg Response Time: 9.5
+      Throughput: 0.019417476 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: 19.0
+      Avg Wait Time: 18.0
+      Avg Response Time: 18.0
+      Throughput: 0.17475729 process per quantum
+Overall: 
+Avg Turnaround Time: 11.277778
+Avg Wait Time: 6.5555553
+Avg Response Time: 6.5555553
+Throughput: 0.17475729 process per quantum
+
+
+Highest Priority First (Preemptive):
+Time Chart:
+P19-P19-P19-P18-P18-P18-P17-P17-P17-P19-P19-P19-P19-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P19-P29-P6-P21-P21-P21-P21-P21-P21-P21-P21-P22-P21-P22-P22-P22-P22-P22-P22-P22-P13-P13-P13-P13-P13-P11-P12-P9-P11-P12-P16-P16-P2-P16-P2-P28-P16-P28-P16-P8-P16-P8-P8-P7-P7-P7-P7-P14-P14-P14-P14-P14-P14-P14-P14-P7-P27-P7-P27-P7-P27-P7-P27-P7-P0-P0-P0-P27-P5-P5-P5-P5-P5-P5-P5-P5-P20-P20-P5-P11-P12-P9-P11-P12-P9-P11-P9-P11-P9-P11-P9-P11-P29-P6-P6-P6-P6-P6-P6-P6
+Statistics:
+Time Taken: 123 quanta
+Number of All Processes: 30
+Number of Processes ran: 22
+First Queue:
+      Avg Turnaround Time: 5.6
+      Avg Wait Time: 0.6
+      Avg Response Time: 0.2
+      Throughput: 0.040650405 process per quantum
+Second Queue:
+      Avg Turnaround Time: 8.909091
+      Avg Wait Time: 4.7272725
+      Avg Response Time: 2.090909
+      Throughput: 0.08943089 process per quantum
+Third Queue:
+      Avg Turnaround Time: 58.5
+      Avg Wait Time: 53.0
+      Avg Response Time: 6.25
+      Throughput: 0.032520324 process per quantum
+Fourth Queue:
+      Avg Turnaround Time: 107.0
+      Avg Wait Time: 103.0
+      Avg Response Time: 13.0
+      Throughput: 0.17886178 process per quantum
+Overall: 
+Avg Turnaround Time: 26.09091
+Avg Wait Time: 21.5
+Avg Response Time: 3.409091
+Throughput: 0.17886178 process per quantum
+
+
+Highest Priority First (Non Preemptive) WITH AGING:
+Time Chart:
+P19-P19-P19-P19-P19-P19-P19-P19-P18-P18-P18-P17-P17-P17-P26-P26-P26-P26-P26-P26-P26-P26-P26-P26-P29-P29-P21-P21-P21-P21-P21-P21-P21-P21-P21-P6-P6-P6-P6-P6-P6-P6-P6-P23-P23-P23-P23-P23-P23-P23-P23-P23-P23-P3-P3-P1-P1-P1-P1-P1-P1-P1-P11-P11-P11-P11-P11-P11-P11-P11-P22-P22-P22-P22-P22-P22-P22-P22-P13-P13-P13-P13-P13-P12-P12-P12-P12-P9-P9-P9-P9-P9-P9-P4-P16-P16-P16-P16-P16-P16-idle
+Statistics:
+Time Taken: 101 quanta
+Number of All Processes: 30
+Number of Processes ran: 17
+Avg Turnaround Time: 29.294117
+Avg Wait Time: 24.411764
+Avg Response Time: 24.411764
+Throughput: 0.16831683 process per quantum
+
+
+Highest Priority First (Preemptive) WITH AGING:
+Time Chart:
+P19-P19-P19-P18-P18-P18-P17-P17-P19-P17-P19-P19-P19-P19-P26-P26-P29-P26-P29-P26-P26-P26-P26-P26-P26-P26-P21-P21-P21-P21-P21-P21-P6-P23-P6-P23-P22-P3-P13-P6-P23-P22-P3-P13-P1-P11-P21-P6-P23-P22-P13-P1-P6-P23-P22-P13-P1-P6-P23-P22-P13-P1-P11-P6-P23-P22-P1-P11-P6-P23-P22-P1-P11-P23-P22-P1-P11-P12-P23-P11-P12-P9-P16-P2-P28-P4-P8-P7-P14-P25-P24-P27-P0-P21-P11-P11-P12-P9-P16-P12-P21-P9-P16-P2-P28-P8-P7-P14-P25-P27-P0-P9-P16-P8-P7-P14-P25-P27-P0-P9-P16-P7-P14-P25-P27-P9-P16-P7-P14-P25-P27-P7-P14-P25-P7-P14-P25-P7-P14-P25-P7-P25-P25
+Statistics:
+Time Taken: 143 quanta
+Number of All Processes: 30
+Number of Processes ran: 26
+Avg Turnaround Time: 45.115383
+Avg Wait Time: 40.615383
+Avg Response Time: 17.038462
+Throughput: 0.18181819 process per quantum
+
+
+
+
+
+
